@@ -13,6 +13,7 @@ services:
     image: "mysql:5.7"
     environment:
       MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: wordpress
     volumes:
       - db:/var/lib/mysql
   phpmyadmin:
